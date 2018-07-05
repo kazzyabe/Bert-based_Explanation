@@ -1,0 +1,202 @@
+Query	Cited	DOC SIM
+
+Q 1 	 C 1   1 	 distance = 3.611 
+
+Q 1 	 C 1   2 	 distance = 3.369 
+
+Q 1 	 C 1   3 	 distance = 3.362 
+
+Q 1 	 C 1   4 	 distance = 3.531 
+
+Q 1 	 C 1   5 	 distance = 3.595 
+
+Q 1 	 C 1   6 	 distance = 3.608 
+
+Q 1 	 C 1   7 	 distance = 3.581 
+
+Q 1 	 C 1   8 	 distance = 3.478 
+
+Q 1 	 C 1   9 	 distance = 3.294 
+
+Q 1 	 C 1   10 	 distance = 3.712 
+
+Q 2 	 C 2   1 	 distance = 5.238 
+
+Q 2 	 C 2   2 	 distance = 5.156 
+
+Q 2 	 C 2   3 	 distance = 5.205 
+
+Q 2 	 C 2   4 	 distance = 5.254 
+
+Q 2 	 C 2   5 	 distance = 5.260 
+
+Q 2 	 C 2   6 	 distance = 5.208 
+
+Q 2 	 C 2   7 	 distance = 5.269 
+
+Q 2 	 C 2   8 	 distance = 5.226 
+
+Q 2 	 C 2   9 	 distance = 5.228 
+
+Q 2 	 C 2   10 	 distance = 5.233 
+
+Q 3 	 C 3   1 	 distance = 3.740 
+
+Q 3 	 C 3   2 	 distance = 3.739 
+
+Q 3 	 C 3   3 	 distance = 3.834 
+
+Q 3 	 C 3   4 	 distance = 3.849 
+
+Q 3 	 C 3   5 	 distance = 3.827 
+
+Q 3 	 C 3   6 	 distance = 3.711 
+
+Q 3 	 C 3   7 	 distance = 3.789 
+
+Q 3 	 C 3   8 	 distance = 3.881 
+
+Q 3 	 C 3   9 	 distance = 3.796 
+
+Q 3 	 C 3   10 	 distance = 3.866 
+
+Q 4 	 C 4   1 	 distance = 3.664 
+
+Q 4 	 C 4   2 	 distance = 3.717 
+
+Q 4 	 C 4   3 	 distance = 3.650 
+
+Q 4 	 C 4   4 	 distance = 4.270 
+
+Q 4 	 C 4   5 	 distance = 3.765 
+
+Q 4 	 C 4   6 	 distance = 3.795 
+
+Q 4 	 C 4   7 	 distance = 3.779 
+
+Q 4 	 C 4   8 	 distance = 3.779 
+
+Q 4 	 C 4   9 	 distance = 3.743 
+
+Q 4 	 C 4   10 	 distance = 3.744 
+
+Q 5 	 C 5   1 	 distance = inf 
+
+Q 5 	 C 5   2 	 distance = inf 
+
+Q 5 	 C 5   3 	 distance = inf 
+
+Q 5 	 C 5   4 	 distance = inf 
+
+Q 5 	 C 5   5 	 distance = inf 
+
+Q 5 	 C 5   6 	 distance = inf 
+
+Q 5 	 C 5   7 	 distance = inf 
+
+Q 5 	 C 5   8 	 distance = inf 
+
+Q 5 	 C 5   9 	 distance = inf 
+
+Q 5 	 C 5   10 	 distance = inf 
+
+Q 6 	 C 6   1 	 distance = 3.873 
+
+Q 6 	 C 6   2 	 distance = 3.997 
+
+Q 6 	 C 6   3 	 distance = 3.868 
+
+Q 6 	 C 6   4 	 distance = 3.873 
+
+Q 6 	 C 6   5 	 distance = 3.991 
+
+Q 6 	 C 6   6 	 distance = 3.969 
+
+Q 6 	 C 6   7 	 distance = 3.980 
+
+Q 6 	 C 6   8 	 distance = 3.981 
+
+Q 6 	 C 6   9 	 distance = 3.982 
+
+Q 6 	 C 6   10 	 distance = 4.015 
+
+Q 7 	 C 7   1 	 distance = 3.642 
+
+Q 7 	 C 7   2 	 distance = 3.483 
+
+Q 7 	 C 7   3 	 distance = 3.666 
+
+Q 7 	 C 7   4 	 distance = 3.498 
+
+Q 7 	 C 7   5 	 distance = 3.518 
+
+Q 7 	 C 7   6 	 distance = 3.575 
+
+Q 7 	 C 7   7 	 distance = 3.543 
+
+Q 7 	 C 7   8 	 distance = 3.638 
+
+Q 7 	 C 7   9 	 distance = 3.637 
+
+Q 7 	 C 7   10 	 distance = 3.518 
+
+Q 8 	 C 8   1 	 distance = 4.160 
+
+Q 8 	 C 8   2 	 distance = 4.173 
+
+Q 8 	 C 8   3 	 distance = 4.256 
+
+Q 8 	 C 8   4 	 distance = 4.120 
+
+Q 8 	 C 8   5 	 distance = 4.243 
+
+Q 8 	 C 8   6 	 distance = 4.209 
+
+Q 8 	 C 8   7 	 distance = 4.147 
+
+Q 8 	 C 8   8 	 distance = 4.180 
+
+Q 8 	 C 8   9 	 distance = 4.098 
+
+Q 8 	 C 8   10 	 distance = 4.048 
+
+Q 9 	 C 9   1 	 distance = 4.161 
+
+Q 9 	 C 9   2 	 distance = 4.100 
+
+Q 9 	 C 9   3 	 distance = 4.083 
+
+Q 9 	 C 9   4 	 distance = 4.141 
+
+Q 9 	 C 9   5 	 distance = 4.141 
+
+Q 9 	 C 9   6 	 distance = 4.072 
+
+Q 9 	 C 9   7 	 distance = 4.071 
+
+Q 9 	 C 9   8 	 distance = 4.033 
+
+Q 9 	 C 9   9 	 distance = 4.276 
+
+Q 9 	 C 9   10 	 distance = 4.070 
+
+Q 10 	 C 10   1 	 distance = 3.880 
+
+Q 10 	 C 10   2 	 distance = 3.858 
+
+Q 10 	 C 10   3 	 distance = 3.982 
+
+Q 10 	 C 10   4 	 distance = 3.908 
+
+Q 10 	 C 10   5 	 distance = 3.935 
+
+Q 10 	 C 10   6 	 distance = 3.911 
+
+Q 10 	 C 10   7 	 distance = 3.780 
+
+Q 10 	 C 10   8 	 distance = 3.863 
+
+Q 10 	 C 10   9 	 distance = 4.044 
+
+Q 10 	 C 10   10 	 distance = 3.920 
+

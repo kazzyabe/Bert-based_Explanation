@@ -1,0 +1,2 @@
+win	batch	embed	sampled	steps	initial	lowest	step	last	% lowest	% last
+21 	 300 	 300 	 100 	100001 	1282.92 	88.22 	 99000 	 88.35 	 93.12 	 93.11 	
