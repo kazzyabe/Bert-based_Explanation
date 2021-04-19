@@ -1,4 +1,4 @@
-# Bert based explanation
+# Bert based Explanation
 This is a project is an extension of the paper "Investigating Textual Case-Based XAI". The description of the paper is in section iccbr2018.
 
 The code and data for bert based explanation is under the directory "bert-based_explanation"
