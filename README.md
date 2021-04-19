@@ -1,4 +1,9 @@
-# iccbr2018
+# Bert based explanation
+This is a project is an extension of the paper "Investigating Textual Case-Based XAI". The description of the paper is in section iccbr2018.
+
+The code and data for bert based explanation is under the directory "bert-based_explanation"
+
+## iccbr2018
 This is repo includes code and data used in studies in paper "Investigating Textual Case-Based XAI"
 
 The raw data from ACL used is available through this link: https://drive.google.com/open?id=1FxaDxcw_g48swVlhftRN_XPnMHC0ZH3V 
