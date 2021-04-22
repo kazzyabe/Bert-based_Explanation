@@ -64,7 +64,7 @@ if __name__ == '__main__':
     ]
 
     # Times Run
-    times = 100
+    times = 10
 
     # The max times GD will run.
     itermax = 50
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     # ---------- Hyper Parameters End Here ----------
 
     # --- Load from Excel File ---
-    excel = read_excel(file_path, header=1, usecols=range(9))
+    excel = read_excel(file_path, header=1, usecols=range(9),engine='openpyxl')
     # --- Data Cleaning ---
     data = excel[cols].values
     # --- Run T times ---
