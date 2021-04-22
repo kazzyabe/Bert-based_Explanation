@@ -1,3 +1,15 @@
+
+# Addition of bert cosine similarity as a new feature to Weber et al.
+## Results and Comparison
+
+### Average on 10 iterations
+#### Weber et al.
+* Average Accuracy: 0.647
+#### Our work
+* Average Accuracy: 0.689
+
+
+# Weber et al.
 # Scripts for Model Accuracy Testing
 
 Scripts load data from Excel file, trained a CBR model for prediction and compute for model accuracy.
