@@ -1,7 +1,7 @@
 # Bert based Explanation
 This is a project is an extension of the paper "Investigating Textual Case-Based XAI". The description of the paper is in section iccbr2018.
 
-The code and data for bert based explanation is under the directory "bert-based_explanation"
+We added cosine similarity of bert embeddings to their system and compared the results. The code and data is in weight-learning.
 
 ## iccbr2018
 This is repo includes code and data used in studies in paper "Investigating Textual Case-Based XAI"

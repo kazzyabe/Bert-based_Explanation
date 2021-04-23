@@ -8,22 +8,22 @@
 #### Our work
 * Average Accuracy: 0.689
 
-
-# Weber et al.
-# Scripts for Model Accuracy Testing
+------------------------------------------------------------------------------------------------------------------------------
+# Information from Weber et al.
+## Scripts for Model Accuracy Testing
 
 Scripts load data from Excel file, trained a CBR model for prediction and compute for model accuracy.
 
-## Reuqirements
+### Reuqirements
 
 * Python3 and relative libraries.
 * Data File (Excel).
 
-## Hyper Parameters
+### Hyper Parameters
 
 Hyper Parameters can be modified to use different running setting.
 
-### File Path
+#### File Path
 
 Variable `file_path` will be used as the path of load Excel file to be loaded.
 
@@ -33,7 +33,7 @@ The relative path of script [run.py](run.py) can also been used. For example `fi
 
 Absolute path is also acceptable. For example, `file_path = '/project/<file name>.xlsx'`
 
-### Column Names
+#### Column Names
 
 Variable `cols` should provide the columns script going to use to load data. It also works as a key to get the similarity function for that feature.
 
@@ -53,15 +53,15 @@ cols = [
 ]
 ```
 
-### Max Iteration for Optimization
+#### Max Iteration for Optimization
 
 `itermax` provieds max iteration will be run for optimization. The default value is `50`.
 
-### k Cases for Prediction
+#### k Cases for Prediction
 
 The CBR model will use k most similar cases for prediction. For example, if `k = 3`, then it will use most common result from 3 most similar cases.
 
-## New Features
+### New Features
 
 If there are new features addded or the same feature with new column name, the variable `fns` in function `init(data, cols)` should be modified.
 
@@ -72,7 +72,7 @@ The similarity function should use the following standard:
 * Takes 2 input argument and return their similarity.
 * Return 0 if the inputs are same.
 
-## Run
+### Run
 
 To run the program, use the following command
 
