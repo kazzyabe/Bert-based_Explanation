@@ -3,6 +3,7 @@ from numpy import array
 from numpy import dot
 from numpy import mean
 from sklearn.model_selection import LeaveOneOut
+from sklearn.metrics import f1_score
 
 
 class CBR_Model(object):
@@ -62,6 +63,8 @@ class CBR_Model(object):
             for i, diff in enumerate(self.diff_fns)
         ])
         diff_score = dot(diff_mat, self.W).item(0)
+        # import pdb
+        # pdb.set_trace()
         return diff_score
 
     def predict(self, case, retrv, k=1):
@@ -113,10 +116,14 @@ class CBR_Model(object):
             The percentage of correct prediction. From 0 to 1 (included).
         """
         correct_count = 0
+        res = {'P': [], 'T':[]}
         for train_index, test_index in LeaveOneOut().split(cases):
             train, test = cases[train_index], cases[test_index]
             predict = self.predict(test[0][:-1], train, k=k)      # predict define above in row 67
             p = act_fn(predict) if act_fn is not None else predict
             correct_count += 1 if p == test[0][-1] else 0
+            res['P'].append(p)
+            res['T'].append(test[0][-1])
         accuracy = correct_count / cases.shape[0]
-        return accuracy
+        f1 = f1_score(res['T'], res['P'])
+        return accuracy, f1

@@ -39,12 +39,18 @@ def init(data, cols):
 
 def optimize(model, data, itermax=50, k=1, act_fn=round):   # round rounds .5 to zero
     weights = [model.W]
-    accuracies = [model.test_acc(data, k=k, act_fn=act_fn)]
+    acc, res = model.test_acc(data, k=k, act_fn=act_fn)
+    accuracies = [acc]
+    ress = [res]
     for _ in range(itermax):
+        # import pdb
+        # pdb.set_trace()
         model.W = Optimizer.gradient_descent(model, data)
         weights.append(model.W)
-        accuracies.append(model.test_acc(data, k=k, act_fn=act_fn))
-    return weights, accuracies
+        acc, res = model.test_acc(data, k=k, act_fn=act_fn)
+        accuracies.append(acc)
+        ress.append(ress)
+    return weights, accuracies, ress
 
 if __name__ == '__main__':
     # ---------- Hyper Parameters Start Here ----------
@@ -80,11 +86,12 @@ if __name__ == '__main__':
     data = excel[cols].values
     # --- Run T times ---
     total = 0
+    total_f1 = 0
     for T in range(1, times+1):
         # --- Init CBR Model ---
         model = init(data, cols)
         # --- Optimize Model Weight ---
-        w, acc = optimize(model, data, itermax=itermax, k=k)
+        w, acc, res = optimize(model, data, itermax=itermax, k=k)
         # --- Print Result ---
         # print to file each accuracy and its corresponding weights W
         with open('report_{}.txt'.format(T), 'w') as f:
@@ -93,13 +100,19 @@ if __name__ == '__main__':
                 print('Weights:', file=f)
                 print(w[i], file=f)
                 print('Accuracy: {}'.format(accy), file=f)
+                print('F1: {}'.format(res[i]), file=f)
+
         # print the maximum accuracy and its corrersponding weights
         print('----- {} -----'.format(T))
         index = argmax(array(acc))
         print('Weights:')
         print(w[index])
         print('Accuracy: {}'.format(acc[index]))
+        print('F1: {}'.format(res[index]))
         total += acc[index]
+        total_f1 += res[index]
     # --- Print the average accuracy ---
     avg = total / times
     print('Average Accuracy is {}.'.format(avg))
+    avg_f1 = total_f1 / times
+    print('Average F1 is {}.'.format(avg_f1))
