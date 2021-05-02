@@ -4,6 +4,7 @@ from numpy import dot
 from numpy import mean
 from sklearn.model_selection import LeaveOneOut
 from sklearn.metrics import f1_score
+import numpy as np
 
 
 class CBR_Model(object):
@@ -91,6 +92,8 @@ class CBR_Model(object):
         ])
         k_index = diff_scores.argsort()[:k]
         p_value = mean(retrv[k_index][:, -1])
+        # import pdb
+        # pdb.set_trace()
         return p_value
 
     def test_acc(self, cases, k=1, act_fn=None):
@@ -124,6 +127,11 @@ class CBR_Model(object):
             correct_count += 1 if p == test[0][-1] else 0
             res['P'].append(p)
             res['T'].append(test[0][-1])
+
+        # neur = dot(cases.T[:-1].T,self.W)
+        # import pdb
+        # pdb.set_trace()
         accuracy = correct_count / cases.shape[0]
-        f1 = f1_score(res['T'], res['P'])
+        # f1 = f1_score(1- np.array(res['T']), 1-np.array(res['P']))
+        f1 = f1_score(np.array(res['T']), np.array(res['P']), average="macro")
         return accuracy, f1
