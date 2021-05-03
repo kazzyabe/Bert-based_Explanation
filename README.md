@@ -5,6 +5,9 @@ Modifications of the CBR model from Weber et al. are in weight-learning.
 * run.py: addition of F1 score calculation in Weber et al.
 * run2.py: addition of BERT cosine similarity as a new feature to Weber et al.
 
+# Bert-similarity
+The script bert_similarity.py uses LOOCV and is used to calculated, train and finetune BERT for the task.
+
 ## iccbr2018
 This is repo includes code and data used in studies in paper "Investigating Textual Case-Based XAI"
 
